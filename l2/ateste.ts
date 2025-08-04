@@ -3,6 +3,7 @@
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { CollabLitElement } from './_100554_collabLitElement'
+import './_102008_folder1/ateste';
 
 @customElement('ateste-102008')
 export class SimpleGreeting extends CollabLitElement {
@@ -24,7 +25,8 @@ export class SimpleGreeting extends CollabLitElement {
         <div class="cls1">
             <h1>Hello world Lucas 10</h1>
             <button @click="${this.showGreetingAlert}">Show Greeting</button>
-        </div>`;
+        </div>
+        <folder1--ateste-102008></folder1--ateste-102008>`;
     }
 
 
