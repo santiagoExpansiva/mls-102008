@@ -7,7 +7,7 @@ import { CollabLitElement } from '_100554_collabLitElement'
 @customElement('folder1--ateste-102008')
 export class SimpleGreeting extends CollabLitElement {
 
-    //outro teste
+    //outro teste 2
 
     @property() name: string = new Date(Date.now()).toString();
 
