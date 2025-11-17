@@ -2,11 +2,12 @@
 
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { CollabLitElement } from './_100554_collabLitElement'
+import { CollabLitElement } from '_100554_collabLitElement'
 
 @customElement('folder1--ateste-102008')
 export class SimpleGreeting extends CollabLitElement {
 
+    //outro teste
 
     @property() name: string = new Date(Date.now()).toString();
 
