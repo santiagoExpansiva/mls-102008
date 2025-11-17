@@ -1,1 +1,33 @@
-Ly8vIDxtbHMgc2hvcnROYW1lPSJhdGVzdGUiIHByb2plY3Q9IjEwMjAwOCIgZW5oYW5jZW1lbnQ9Il8xMDA1NTRfZW5oYW5jZW1lbnRMaXQiIGdyb3VwTmFtZT0ib3RoZXIiIC8+IAoKaW1wb3J0IHsgaHRtbCB9IGZyb20gJ2xpdCc7CmltcG9ydCB7IGN1c3RvbUVsZW1lbnQsIHByb3BlcnR5IH0gZnJvbSAnbGl0L2RlY29yYXRvcnMuanMnOwppbXBvcnQgeyBDb2xsYWJMaXRFbGVtZW50IH0gZnJvbSAnLi9fMTAwNTU0X2NvbGxhYkxpdEVsZW1lbnQnCmltcG9ydCAnLi9fMTAyMDA4X2ZvbGRlcjEvYXRlc3RlJzsKCkBjdXN0b21FbGVtZW50KCdhdGVzdGUtMTAyMDA4JykKZXhwb3J0IGNsYXNzIFNpbXBsZUdyZWV0aW5nIGV4dGVuZHMgQ29sbGFiTGl0RWxlbWVudCB7CgovL3Rlc3RlCiAgICBAcHJvcGVydHkoKSBuYW1lOiBzdHJpbmcgPSBuZXcgRGF0ZShEYXRlLm5vdygpKS50b1N0cmluZygpOwoKICAgIGhhbmRsZUNvbmZpcm0oZTogQ3VzdG9tRXZlbnQpIHsKICAgICAgICBjb25zb2xlLmluZm8oZS5kZXRhaWwpCiAgICB9CgoKICAgIHNob3dHcmVldGluZ0FsZXJ0KCkgewogICAgICAgIGFsZXJ0KGBIZWxsbyB3b3JsZCBMdWNhcyAxMGApOwogICAgfQoKICAgIHJlbmRlcigpIHsKICAgICAgICByZXR1cm4gaHRtbGAKICAgICAgICA8ZGl2IGNsYXNzPSJjbHMxIj4KICAgICAgICAgICAgPGgxPkhlbGxvIHdvcmxkIEx1Y2FzIDEwPC9oMT4KICAgICAgICAgICAgPGJ1dHRvbiBAY2xpY2s9IiR7dGhpcy5zaG93R3JlZXRpbmdBbGVydH0iPlNob3cgR3JlZXRpbmc8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8Zm9sZGVyMS0tYXRlc3RlLTEwMjAwOD48L2ZvbGRlcjEtLWF0ZXN0ZS0xMDIwMDg+YDsKICAgIH0KCgp9
+/// <mls shortName="ateste" project="102008" enhancement="_100554_enhancementLit" groupName="other" /> 
+
+import { html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { CollabLitElement } from './_100554_collabLitElement'
+import './_102008_folder1/ateste';
+
+@customElement('ateste-102008')
+export class SimpleGreeting extends CollabLitElement {
+
+//teste
+    @property() name: string = new Date(Date.now()).toString();
+
+    handleConfirm(e: CustomEvent) {
+        console.info(e.detail)
+    }
+
+
+    showGreetingAlert() {
+        alert(`Hello world Lucas 10`);
+    }
+
+    render() {
+        return html`
+        <div class="cls1">
+            <h1>Hello world Lucas 10</h1>
+            <button @click="${this.showGreetingAlert}">Show Greeting</button>
+        </div>
+        <folder1--ateste-102008></folder1--ateste-102008>`;
+    }
+
+
+}
