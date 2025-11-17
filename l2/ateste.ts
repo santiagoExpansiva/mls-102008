@@ -2,7 +2,7 @@
 
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { CollabLitElement } from './_100554_collabLitElement'
+import { CollabLitElement } from '_100554_collabLitElement'
 import './_102008_folder1/ateste';
 
 @customElement('ateste-102008')
